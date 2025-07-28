@@ -1,4 +1,4 @@
-Here’s the updated `README.md` with revised instructions on **how to run the SQL files after logging into MySQL**, and simplified command-line usage explanations:
+Instructions on **how to run the SQL files after logging into MySQL**, and simplified command-line usage explanations:
 
 ---
 
