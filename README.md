@@ -23,14 +23,15 @@ The database includes the following tables:
 - **course_faculty**: Many-to-many mapping between courses and faculty (with semester info).
 - **enrollments**: Tracks which students are enrolled in which courses, their semester, and grades.
 
-## ✅ Setup Instructions
+````
+
+### ✅ Setup Instructions
 
 ### Step 1: Open MySQL Command Line
 Login to your MySQL server by running:
 
 ```bash
 mysql -u <your_username> -p
-````
 
 You’ll be prompted to enter your MySQL password.
 
