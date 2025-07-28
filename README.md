@@ -2,7 +2,7 @@ Here’s the updated `README.md` with revised instructions on **how to run the S
 
 ---
 
-````markdown
+```markdown
 # Student-Course Management Database
 
 This project provides SQL scripts to create and populate a sample relational database for managing departments, students, courses, faculty, and their relationships within an educational institution.
@@ -22,16 +22,17 @@ The database includes the following tables:
 - **faculty**: Contains faculty information including department affiliation.
 - **course_faculty**: Many-to-many mapping between courses and faculty (with semester info).
 - **enrollments**: Tracks which students are enrolled in which courses, their semester, and grades.
-
-````
+```
 
 ### ✅ Setup Instructions
 
 ### Step 1: Open MySQL Command Line
+
 Login to your MySQL server by running:
 
 ```bash
 mysql -u <your_username> -p
+```
 
 You’ll be prompted to enter your MySQL password.
 
@@ -68,21 +69,21 @@ SOURCE C:/Users/Haresh/Desktop/insert_data.sql;
 
 The database includes:
 
-* 20 departments
-* 20+ students with varied department affiliations
-* 20+ courses including theory and lab sessions
-* 20+ faculty members
-* Course-faculty mapping across semesters
-* Enrollment records with grades
+- 20 departments
+- 20+ students with varied department affiliations
+- 20+ courses including theory and lab sessions
+- 20+ faculty members
+- Course-faculty mapping across semesters
+- Enrollment records with grades
 
 ## 🔍 Use Cases
 
 This setup is ideal for:
 
-* Learning relational database design
-* Practicing SQL queries (joins, aggregates, constraints)
-* Developing educational management systems
-* Academic projects for database or software engineering courses
+- Learning relational database design
+- Practicing SQL queries (joins, aggregates, constraints)
+- Developing educational management systems
+- Academic projects for database or software engineering courses
 
 ## 📄 License
 
