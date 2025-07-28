@@ -1,4 +1,4 @@
-Here's a `README.md` file for your GitHub repository that contains the `create_tables.sql` and `insert_data.sql` files. This README gives an overview of the project, including setup instructions and the purpose of each script.
+Here’s the updated `README.md` with revised instructions on **how to run the SQL files after logging into MySQL**, and simplified command-line usage explanations:
 
 ---
 
@@ -17,45 +17,71 @@ This project provides SQL scripts to create and populate a sample relational dat
 The database includes the following tables:
 
 - **departments**: Contains department details.
-- **students**: Contains student information including department association.
+- **students**: Contains student information including department affiliation.
 - **courses**: Contains course offerings with credit information.
-- **faculty**: Contains faculty information including department association.
+- **faculty**: Contains faculty information including department affiliation.
 - **course_faculty**: Many-to-many mapping between courses and faculty (with semester info).
 - **enrollments**: Tracks which students are enrolled in which courses, their semester, and grades.
 
 ## ✅ Setup Instructions
 
-1. Ensure you have a MySQL or compatible SQL database installed.
-2. Run `create_tables.sql` to create the schema:
-   ```bash
-   mysql -u <username> -p < your_database < create_tables.sql
+### Step 1: Open MySQL Command Line
+Login to your MySQL server by running:
+
+```bash
+mysql -u <your_username> -p
 ````
 
-3. Run `insert_data.sql` to populate the database:
+You’ll be prompted to enter your MySQL password.
 
-   ```bash
-   mysql -u <username> -p < your_database < insert_data.sql
-   ```
+### Step 2: Create a Database
+
+Inside the MySQL prompt, create a new database:
+
+```sql
+CREATE DATABASE student_course_db;
+USE student_course_db;
+```
+
+### Step 3: Run the SQL Scripts
+
+To execute the `.sql` files from within the MySQL prompt:
+
+```sql
+SOURCE /path/to/create_tables.sql;
+SOURCE /path/to/insert_data.sql;
+```
+
+Replace `/path/to/` with the actual location where your SQL files are saved.
+
+### Example:
+
+```sql
+SOURCE C:/Users/Haresh/Desktop/create_tables.sql;
+SOURCE C:/Users/Haresh/Desktop/insert_data.sql;
+```
+
+> ✅ Tip: Ensure that the file paths use **forward slashes (`/`)** or are enclosed in quotes on Windows.
 
 ## 📊 Sample Data
 
-The dataset includes:
+The database includes:
 
 * 20 departments
 * 20+ students with varied department affiliations
 * 20+ courses including theory and lab sessions
 * 20+ faculty members
 * Course-faculty mapping across semesters
-* Sample enrollment records with grades
+* Enrollment records with grades
 
 ## 🔍 Use Cases
 
-This database can be used for:
+This setup is ideal for:
 
-* Academic management system demos
-* SQL practice and learning joins, constraints, and normalization
-* Developing student/faculty portals
-* Project work for database or software engineering courses
+* Learning relational database design
+* Practicing SQL queries (joins, aggregates, constraints)
+* Developing educational management systems
+* Academic projects for database or software engineering courses
 
 ## 📄 License
 
@@ -63,11 +89,11 @@ This project is open-source and free to use for educational or non-commercial pu
 
 ---
 
-📬 For suggestions or improvements, feel free to create a pull request or open an issue!
+📬 Feel free to contribute by submitting a pull request or reporting any issues!
 
 ```
 
 ---
 
-Let me know if you'd like this in `.md` or `.docx` format, or want to include ER diagrams or SQL queries for sample analytics.
+Let me know if you'd like a `.docx` or `.pdf` version of this `README`, or a sample query sheet to test your database after setup.
 ```
