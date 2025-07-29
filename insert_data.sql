@@ -124,8 +124,7 @@ INSERT INTO course_faculty (course_id, faculty_id, semester) VALUES
 (216, 315, 3),
 (217, 316, 7),
 (218, 317, 8),
-(219, 318, 3),
-(220, 319, 2);
+(219, 318, 3);
 
 -- Enrollments Table Data Insertion
 -- This script inserts data into the enrollments table.
