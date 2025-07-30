@@ -47,7 +47,7 @@ INSERT INTO students (student_id, name, dob, email, department_id) VALUES
 (118, 'Sneha Rawal', '2004-06-16', 'sneha@example.com', 3),
 (119, 'Tanvi Shah', '2004-10-02', 'tanvi@example.com', 1),
 (120, 'Utsav Dave', '2003-09-09', 'utsav@example.com', 3),
-(121, ' ', '2000-12-01', '', 3);
+(121, NULL, '2000-12-01', NULL, 3);
 
 -- Course Table Data Insertion
 -- This script inserts data into the courses table.
@@ -72,7 +72,7 @@ INSERT INTO courses (course_id, course_name, credits) VALUES
 (218, 'Project Phase 2', 2),
 (219, 'Python Programming', 4),
 (221, 'DBMS Lab', 2),
-(222, ' ', 3),
+(222, NULL, 3),
 (223, 'DBMS Lab', 3),
 (224, 'IOT Lab', NULL);
 
