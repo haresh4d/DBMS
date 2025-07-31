@@ -27,7 +27,7 @@ INSERT INTO departments (department_id, department_name) VALUES
 -- Student Table Data Insertion
 -- This script inserts data into the students table.
 INSERT INTO students (student_id, name, dob, email, department_id) VALUES
-(101, 'Alice Shah', '2004-05-10', 'alice@example.com', 1),
+(101, 'Khushi Shah', '2004-05-10', 'kushi@example.com', 1),
 (102, 'Bhavesh Patel', '2003-11-23', 'bhavesh@example.com', 1),
 (103, 'Chirag Mehta', '2004-01-15', 'chirag@example.com', 2),
 (104, 'Dhruvi Joshi', '2003-06-08', 'dhruvi@example.com', 3),
